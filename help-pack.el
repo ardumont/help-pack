@@ -1,4 +1,4 @@
-;;; scratch-pack.el --- A pack to tinker
+;;; help-pack.el --- A pack to reference the help modes in mastering emacs
 
 ;;; Commentary:
 
@@ -15,4 +15,5 @@
 
 (guide-key-mode 1)                             ;; Enable guide-key-mode
 
+(provide 'help-pack)
 ;;; help-pack.el ends here
