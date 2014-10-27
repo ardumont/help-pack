@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-(install-packs '(guide-key))
+(install-packages-pack/install-packs '(guide-key))
 
 (require 'guide-key)
 
