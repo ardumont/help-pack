@@ -4,17 +4,16 @@
 
 ;;; Code:
 
-(require 'install-packages-pack)
-(install-packages-pack/install-packs '(guide-key))
-
-(require 'guide-key)
-
-(setq guide-key/idle-delay 0.8)                ;; Delay in seconds before guide
-;; buffer is displayed.
-(setq guide-key/guide-key-sequence '("C-c" "C-x" "M-?"))   ;; key sequence to learn
-(setq guide-key/recursive-key-sequence-flag t)
-
-(guide-key-mode 1)                             ;; Enable guide-key-mode
+(use-package guide-key
+  :config
+  (custom-set-variables
+   ;; Delay in seconds before guide
+   '(guide-key/idle-delay 0.8)
+   ;; key sequence to learn
+   '(guide-key/guide-key-sequence '("C-c" "C-x" "M-?"))
+   '(guide-key/recursive-key-sequence-flag t))
+  ;; Enable guide-key-mode
+  (guide-key-mode 1))
 
 (provide 'help-pack)
 ;;; help-pack.el ends here
