@@ -10,7 +10,7 @@
    ;; Delay in seconds before guide
    '(guide-key/idle-delay 0.8)
    ;; key sequence to learn
-   '(guide-key/guide-key-sequence '("C-c" "C-x" "M-?"))
+   '(guide-key/guide-key-sequence '("C-c" "C-x" "M-?" "#"))
    '(guide-key/recursive-key-sequence-flag t))
   ;; Enable guide-key-mode
   (guide-key-mode 1))
