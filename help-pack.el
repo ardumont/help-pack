@@ -3,18 +3,9 @@
 ;;; Commentary:
 
 ;;; Code:
-
-(require 'guide-key)
-(custom-set-variables
- ;; Delay in seconds before guide
- '(guide-key/idle-delay 0.8)
- ;; key sequence to learn
- '(guide-key/guide-key-sequence '("C-c" "C-x" "M-?" "#"))
- '(guide-key/recursive-key-sequence-flag t)
- '(guide-key/popup-window-position :bottom))
-
-;; Enable guide-key-mode
-(guide-key-mode 1)
+(require 'which-key)
+(which-key-mode +1)
+(setq which-key-popup-type 'minibuffer)
 
 (provide 'help-pack)
 ;;; help-pack.el ends here
