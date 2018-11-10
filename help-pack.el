@@ -7,5 +7,8 @@
 (which-key-mode +1)
 (setq which-key-popup-type 'minibuffer)
 
+(require 'helpful)
+(global-set-key (kbd "C-c C-d") #'helpful-at-point)
+
 (provide 'help-pack)
 ;;; help-pack.el ends here
